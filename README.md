@@ -13,12 +13,17 @@ The centroids for the clustering and subclustering, as well as the hihg-risk clu
 Use the following code to open them:
 
 with open('cluster_centroids.pkl', 'rb') as file:
+
     original_cluster_centroids = pickle.load(file)
+    
     original_subcluster_centroids = pickle.load(file)
 
 with open('high_fraud_cluster_lists.pkl', 'rb') as file:
+
     high_fraud_clusters = pickle.load(file)
+    
     high_fraud_subclusters = pickle.load(file)
+    
     high_fraud_subclusters_62 = pickle.load(file)
   
 ### Model Performance
