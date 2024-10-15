@@ -12,19 +12,19 @@ The modelling and testing was all done in the 'Online Payment Fraud Detection Us
 The centroids for the clustering and subclustering, as well as the hihg-risk cluster and subcluster lists are saved separately in 'cluster_centroids.pkl' and 'high_fraud_cluster_lists.pkl'. They are not required to run the notebook, but are saved for future use. 
 Use the following code to open them:
 
-with open('cluster_centroids.pkl', 'rb') as file:
+    with open('cluster_centroids.pkl', 'rb') as file:
 
-    original_cluster_centroids = pickle.load(file)
+        original_cluster_centroids = pickle.load(file)
     
-    original_subcluster_centroids = pickle.load(file)
+        original_subcluster_centroids = pickle.load(file)
 
-with open('high_fraud_cluster_lists.pkl', 'rb') as file:
+    with open('high_fraud_cluster_lists.pkl', 'rb') as file:
 
-    high_fraud_clusters = pickle.load(file)
+        high_fraud_clusters = pickle.load(file)
     
-    high_fraud_subclusters = pickle.load(file)
+        high_fraud_subclusters = pickle.load(file)
     
-    high_fraud_subclusters_62 = pickle.load(file)
+        high_fraud_subclusters_62 = pickle.load(file)
   
 ### Model Performance
 We are interested in the recall and precision of the fraudulent data. Recall measures how well fraudulent transactions were identified, while precision measures how many of the flagged transactions were actually fraudulent
