@@ -6,7 +6,9 @@ This project implements machine learning models to detect fraudulent transaction
 
 ## The Project
 The data was sourced from Kaggle, and each transaction was labelled with 0 for non-fraudulent or 1 for fraudulent.
+
 The modelling and testing was all done in the 'Online Payment Fraud Detection.ipynb' file. The file includes initial data cleaning, exploratory data analysis, feature engineering, and modelling using isolation forests and HDBSCAN clustering and then subclustering. The HBDSCAN model is then evaluated using another sample from the dataset.
+
 The centroids for the clustering and subclustering, as well as the hihg-risk cluster and subcluster lists are saved separately in 'cluster_centroids_and_high_fraud_clusters.pkl'. They are not required to run the notebook, but are saved for future use.
 
 ### Model Performance
