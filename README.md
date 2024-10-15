@@ -2,10 +2,10 @@
 
 ## Overview
 
-This project implements machine learning models to detect fraudulent transactions. This project experiments with both isolation forests and HDBSCAN clustering. HDBSCAN clustering was found to give better results in terms of fraud detection. 
+This project implements machine learning models to detect fraudulent transactions. It experiments with both Isolation Forests and HDBSCAN clustering, with HDBSCAN yielding better results in terms of fraud detection.
 
 ## The Project
-The data was sourced from Kaggle, and each transaction was labelled with 0 for non-fraudulent or 1 for fraudulent.
+The data was sourced from Kaggle, where each transaction is labeled as 0 for non-fraudulent or 1 for fraudulent.
 
 The modelling and testing was all done in the 'Online Payment Fraud Detection Using Machine Learning.ipynb' file. This notebook includes:
 * Initial data cleaning
