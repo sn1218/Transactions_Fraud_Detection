@@ -31,7 +31,7 @@ HDBSCAN clustering was found to give better initial results in terms of recall a
 
 #### Model Artifacts
 Three artifacts were generated and saved during the project:
-* ** cluster_centroids.pkl:** This file stores the centroids of the main clusters and subclusters formed by the HDBSCAN algorithm.
+* **cluster_centroids.pkl:** This file stores the centroids of the main clusters and subclusters formed by the HDBSCAN algorithm.
 * **high_fraud_cluster_lists.pkl:** Contains the lists of high-risk clusters and subclusters that showed a higher concentration of fraud.
 * **df_sampled.pkl:** Contains the sample of the data used in building the initial clustering model.
 
