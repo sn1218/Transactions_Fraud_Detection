@@ -5,6 +5,7 @@ This project focuses on detecting fraudulent transactions using machine learning
 
 ## Project Details
 ### Tools and Libraries
+
 * **pandas and numpy:** For data manipulation and analysis.
 * **matplotlib and seaborn:** For data visualisation and exploratory analysis.
 * **sklearn:** For machine learning models (Isolation Forest, classification metrics, standardization, PCA).
@@ -30,7 +31,7 @@ HDBSCAN clustering was found to give better initial results in terms of recall a
 
 #### Model Artifacts
 Three artifacts were generated and saved during the project:
-*** cluster_centroids.pkl:** This file stores the centroids of the main clusters and subclusters formed by the HDBSCAN algorithm.
+* ** cluster_centroids.pkl:** This file stores the centroids of the main clusters and subclusters formed by the HDBSCAN algorithm.
 * **high_fraud_cluster_lists.pkl:** Contains the lists of high-risk clusters and subclusters that showed a higher concentration of fraud.
 * **df_sampled.pkl:** Contains the sample of the data used in building the initial clustering model.
 
@@ -75,10 +76,10 @@ To improve performance in future iterations, I would:
 In conclusion, while the model did not generalise well to new data, this experience provides valuable insights into the limitations of the current approach. These reflections can guide the design of a more robust and adaptable fraud detection model in future projects.
 
 ## Repository Structure
-* **Online Payment Fraud Detection Using Machine Learning.ipynb: **The main notebook detailing all steps of the project, including data preprocessing, exploratory data analysis, feature engineering, model building, and evaluation.
+* **Online Payment Fraud Detection Using Machine Learning.ipynb:** The main notebook detailing all steps of the project, including data preprocessing, exploratory data analysis, feature engineering, model building, and evaluation.
 * **Testing Clustering Model on New Data.ipynb:** Notebook testing the model on new data by first running the HDBSCAN and then mapping the new clusters to the original clusters using KNN.
 * **cluster_centroids.pkl:** Stores the centroids of the clusters and subclusters created by HDBSCAN.
-* **high_fraud_cluster_lists.pkl: **Contains the high-risk cluster and subcluster lists identified during the project.
+* **high_fraud_cluster_lists.pkl:** Contains the high-risk cluster and subcluster lists identified during the project.
 * **df_sampled.pkl:** Contains the sample of the data used in building the initial clustering model.
 
 ## How to Use the Project
@@ -86,4 +87,6 @@ To run the project:
 * Clone the repository and download the notebook and .pkl files.
 * Follow the 'Testing Clustering Model on New Data.ipynb' notebook to test the model.
 
-Note: the 'Testing Clustering Model on New Data.ipynb' tests the clustering model on another 10% sample of the same dataset used in the 'Online Payment Fraud Detection Using Machine Learning.ipynb'. If you wish to test using another dataset, it will need to have similar initial columns, e.g. 'step', 'amount', 'oldbalanceOrig', 'newbalanceOrig', 'oldbalanceDest', etc.. Please see the prepare_features function in either of the notebooks for the columns that will be required. 
+Note: the 'Testing Clustering Model on New Data.ipynb' tests the clustering model on another 10% sample of the same dataset used in the 'Online Payment Fraud Detection Using Machine Learning.ipynb'. 
+
+If you wish to test using another dataset, it will need to have similar initial columns, e.g. 'step', 'amount', 'oldbalanceOrig', 'newbalanceOrig', 'oldbalanceDest', etc.. Please see the prepare_features function in either of the notebooks for the columns that will be required. 
